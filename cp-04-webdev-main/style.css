@@ -1,0 +1,252 @@
+body {
+    background-color: #1b1811; 
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+  .navbar {
+    background-color: #8c6d5c; 
+  }
+  
+  .navbar-brand,
+  .nav-link {
+    color: #371a00; 
+  }
+  
+  .navbar-brand:hover,
+  .nav-link:hover {
+    color: #ffd700; 
+  }
+  
+  .container {
+    margin-top: 80px; 
+  }
+  
+  .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-tec {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-roupas {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+  }
+  
+  .card-img-top {
+    height: 300px; 
+    object-fit: cover; 
+  }
+  
+  .card-body {
+    background-color: #ffffff; 
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .card-title {
+    color: #4a3b2a; 
+    font-weight: bold;
+  }
+  
+  .card-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333; /* Adiciona uma cor específica para os preços */
+  }
+  
+  .btn-custom {
+    background-color: #7a5a4a; /* Cor de fundo personalizada */
+    border: 1px solid #7a5a4a; /* Borda com a mesma cor */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Remover sublinhado */
+    display: inline-block; /* Para ajustar o tamanho do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 10px 2px; /* Margem ao redor do botão */
+    cursor: pointer; /* Cursor pointer ao passar o mouse */
+    border-radius: 5px; /* Cantos arredondados */
+  }
+  
+  .btn-custom:hover {
+    background-color: #6f4f3b; /* Cor de fundo ao passar o mouse */
+    border-color: #6f4f3b; /* Cor da borda ao passar o mouse */
+  }
+  
+  .custom-margin-top {
+    margin-top: 80px; 
+  }
+  
+  .footer {
+    background-color: #8c6d5c; 
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .nav-link {
+    position: relative; 
+    display: flex; 
+    align-items: center; 
+  }
+  
+  .nav-link img {
+    width: 30px; 
+    height: auto;
+  }
+  
+  .nav-link .badge {
+    position: absolute;
+    top: 8px; 
+    right: 40px; 
+    border-radius: 10%;
+    padding: 5px 10px; 
+    font-size: 12px; 
+    font-weight: bold; 
+    min-width: 30px; 
+    height: 15px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  /* CSS para garantir a consistência dos cartões */
+  .card, .card-roupas, .card-tec {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Garante que os cartões preencham a altura disponível */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  }
+  
+  .card-img-top {
+    max-height: 180px; /* Define uma altura máxima consistente para as imagens */
+    object-fit: cover; /* Garante que a imagem cubra o cartão sem distorção */
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    flex: 1; /* Faz com que o corpo do cartão ocupe o espaço restante */
+  }
+  
+  .card-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333; /* Adiciona uma cor específica para os preços */
+  }
+  
+  .btn-custom {
+    background-color: #28a745; /* Ajuste para sua cor de botão */
+    color: #fff;
+    border: none;
+  }
+  
+  .btn-custom:hover {
+    background-color: #218838;
+  }
+  
+  /* Adiciona sombra e efeito hover para destacar os cartões */
+  .card, .card-roupas, .card-tec {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover, .card-roupas:hover, .card-tec:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Layout Flexível */
+  .row {
+    display: flex;
+    flex-wrap: wrap; /* Garante que os cartões se movam para a próxima linha se não houver espaço */
+    margin: -15px; /* Ajusta para espaçamento consistente */
+  }
+  
+  .col-md-4 {
+    flex: 1 1 33%; /* Ajuste a proporção conforme necessário */
+    max-width: 33%; /* Define a largura máxima para cada coluna */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    padding: 15px; /* Espaçamento interno entre cartões */
+  }
+  
+  @media (max-width: 768px) {
+    .col-md-4 {
+      flex: 1 1 50%; /* Ajusta para 2 colunas em telas menores */
+      max-width: 50%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .col-md-4 {
+      flex: 1 1 100%; /* Ajusta para 1 coluna em telas muito pequenas */
+      max-width: 100%;
+    }
+  }
+
+  
+  .custom-filter {
+    background-color: #8c6d5c; /* Cor de fundo igual à navbar */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 100px;
+  }
+  
+  .custom-filter h5 {
+    color: #ffffff; /* Cor do texto do título */
+    margin-bottom: 15px;
+  }
+  
+  .custom-filter .form-select {
+    background-color: #ffffff; /* Cor de fundo da seleção */
+    color: #333; /* Cor do texto da seleção */
+    border: 1px solid #7a5a4a; /* Cor da borda da seleção */
+    border-radius: 5px; /* Cantos arredondados */
+  }
+  
+  .custom-filter .form-select:focus {
+    border-color: #6f4f3b; /* Cor da borda ao focar */
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1); /* Sombra ao focar */
+  }
+  
+  .custom-filter .btn-custom {
+    background-color: #7a5a4a; /* Cor de fundo dos botões */
+    border: 1px solid #7a5a4a; /* Cor da borda dos botões */
+    color: #ffffff; /* Cor do texto dos botões */
+    padding: 10px 20px; /* Espaçamento interno dos botões */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Remover sublinhado */
+    display: inline-block; /* Ajuste o tamanho do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    margin-top: 10px; /* Margem superior para separar dos elementos acima */
+  }
+  
+  .custom-filter .btn-custom:hover {
+    background-color: #6f4f3b; /* Cor de fundo ao passar o mouse */
+    border-color: #6f4f3b; /* Cor da borda ao passar o mouse */
+  }

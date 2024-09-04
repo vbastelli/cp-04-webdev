@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "nome": "EcoMagic - Vestido",
+      "preco": 120.00,
+      "imagem": "src/vestido.png"
+    },
+    {
+      "id": 2,
+      "nome": "EcoMagic - Conjunto Moletom",
+      "preco": 150.00,
+      "imagem": "src/conjunto.png"
+    },
+    {
+      "id": 3,
+      "nome": "EcoMagic - Colar Florido",
+      "preco": 45.00,
+      "imagem": "src/colar.png"
+    },
+    {
+      "id": 4,
+      "nome": "Óleos essenciais",
+      "preco": 60.00,
+      "imagem": "src/oleo.png"
+    },
+    {
+      "id": 5,
+      "nome": "Fortalecedor de Hidratação Diária",
+      "preco": 35.00,
+      "imagem": "src/fortalecedor.png"
+    },
+    {
+      "id": 6,
+      "nome": "Hidrolato de Camomila Romana Orgânico",
+      "preco": 25.00,
+      "imagem": "src/Camomila-Romana.png"
+    },
+    {
+      "id": 7,
+      "nome": "Garrafa Bambu",
+      "preco": 80.00,
+      "imagem": "src/garrafabambu.png"
+    },
+    {
+      "id": 8,
+      "nome": "Refletor",
+      "preco": 90.00,
+      "imagem": "src/refletor.png"
+    },
+    {
+      "id": 9,
+      "nome": "Vaso",
+      "preco": 70.00,
+      "imagem": "src/vaso.png"
+    },
+    {
+      "id": 10,
+      "nome": "Lâmpada LED Sem Fio",
+      "preco": 50.00,
+      "imagem": "src/lampadaled.webp"
+    },
+    {
+      "id": 11,
+      "nome": "Inversor Solar Growatt 25 KW",
+      "preco": 5000.00,
+      "imagem": "src/inversor.png"
+    },
+    {
+      "id": 12,
+      "nome": "Conector Solar",
+      "preco": 15.00,
+      "imagem": "src/conector.jfif"
+    }
+  ]
+  
