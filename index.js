@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Ordena os cartões de acordo com o preço
         cards.sort((a, b) => {
-          const priceA = parseFloat(a.querySelector('.card-price').innerText.replace('R$ ', '').replace(',', '.')) || 0;
-          const priceB = parseFloat(b.querySelector('.card-price').innerText.replace('R$ ', '').replace(',', '.')) || 0;
+          const priceA = parseFloat(a.querySelector('.card-price').innerText.replace('R$ ', '').replace(',', '.'));
+          const priceB = parseFloat(b.querySelector('.card-price').innerText.replace('R$ ', '').replace(',', '.'));
 
           if (order === 'asc') {
             return priceA - priceB;
@@ -29,9 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Remove todos os cartões da linha
-        while (row.firstChild) {
-          row.removeChild(row.firstChild);
-        }
+        row.innerHTML = '';
 
         // Adiciona os cartões ordenados de volta à linha
         cards.forEach(card => row.appendChild(card));
