@@ -131,15 +131,10 @@ body {
   
   /* CSS para garantir a consistência dos cartões */
   .card, .card-roupas, .card-tec {
-    display: flex;
-    flex-direction: column;
-    height: 100%; /* Garante que os cartões preencham a altura disponível */
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
-    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    flex: 1 1 calc(33.333% - 1rem); /* Ajusta a largura dos cartões para três por linha com espaço */
+    margin: 0.5rem; /* Adiciona um pouco de espaço entre os cartões */
   }
+  
   
   .card-img-top {
     max-height: 180px; /* Define uma altura máxima consistente para as imagens */
@@ -250,3 +245,14 @@ body {
     background-color: #6f4f3b; /* Cor de fundo ao passar o mouse */
     border-color: #6f4f3b; /* Cor da borda ao passar o mouse */
   }
+
+  /* style.css */
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cartões se movam para a próxima linha se não houver espaço */
+}
+
+.card, .card-roupas, .card-tec {
+  flex: 1 1 calc(33.333% - 1rem); /* Ajusta a largura dos cartões para três por linha com espaço */
+  margin: 0.5rem; /* Adiciona um pouco de espaço entre os cartões */
+}
